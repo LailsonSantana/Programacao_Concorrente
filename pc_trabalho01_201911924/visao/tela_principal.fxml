@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #156a94;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="btnNovoJogo" layoutX="249.0" layoutY="174.0" mnemonicParsing="false" onAction="#abreTelaRegistro" prefHeight="53.0" prefWidth="103.0" text="NOVO JOGO" textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnSair" layoutX="447.0" layoutY="321.0" mnemonicParsing="false" onAction="#fechaTela" prefHeight="30.0" prefWidth="115.0" text="SAIR">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnInformacoes" layoutX="30.0" layoutY="321.0" mnemonicParsing="false" onAction="#veInformacoes" prefHeight="30.0" prefWidth="115.0" text="INFORMAÇÕES">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Text fx:id="txtTitulo" layoutX="214.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR BET">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="txtInformacoes" editable="false" layoutX="1.0" layoutY="3.0" prefHeight="391.0" prefWidth="480.0" promptText="YOUR BET É UM DE SORTE E DE CERTA FORMA TAMBÉM ESTRATÉGICO ,NA QUAL O OBJETIVO É OBTER O MÁXIMO DE PONTUAÇÃO POSSÍVEL EM UM TEMPO DE 60 SEGUNDOSSEMPRE QUE O JOGADOR CLICAR NO BOTÃO JOGAR , UM NÚMERO ALEATÓRIO ENTRE 1 E 1000 É GERADO ,E A DEPENDER DO INTERVALO DESSE VALOR , O JOGADOR PODE GANHAR UMA CERTA QUANTIDADE DE PONTOS QUE TAMBÉM É POSSÍVEL SER ALTERADA NO DECORRER DO JOGO , ASSIM COMO AS CHANCES DE GANHO .AS CHANCES DE GANHO PERMITE QUE VOCÊ ESCOLHA SE QUER ARRISCAR MAIS ESCOLHENDO UM INTERVALO PEQUENO MAS COM MAIS PONTUAÇÃO , OU INTERVALOS MAIORES COM MENORES PONTUAÇÕES , POR EXEMPLO , EXISTEM 5 POSSÍVEIS OPÇÕES :10 % , 25 % , 50 % , 75 % , 90 % , CASO VOCÊ ESCOLHA 10 % , SEU INTERVALO DE NÚMEROS DA SORTE SERÁ DE 1 A 100 , OU SEJA , É FEITO A DISTRIBUIÇÃO DE FORMA PROPORCIONAL , APESAR DE SER UM INTERVALO PEQUENO ISSO INFLUENCIA DIRETAMENTE NAS PONTUAÇÕES QUE SERÃO OBTIDAS , NESSE MOMENTO ENTRA O CONCEITO DE VALORES DE APOSTA , QUE PODEM VARIAR DE 1 ATÉ PONTUAÇÃO MÁXIMA OBTIDA PELO JOGADOR NAQUELE MOMENTO , SUPONDO POR EXEMPLO QUE O JOGADOR ESCOLHA UM VALOR DE APOSTA DE 3 , COMO SUAS CHANCES DE GANHO SÃO DE 10% CASO ELE CONSIGA OBTER UM VALOR GANHADOR (QUE ESTEJA NO INTERVALO DE 1 A 100) , ELE GANHARÁ 27 PONTOS , VISTO QUE 9 x 3 = 27 , CASO CONTRÁRIO , SE ELE OBTER UM VALOR ENTRE 101 E 1000 PERDERÁ OS 3 PONTOS APOSTADOS " style="-fx-background-color: #ffffff;" text="1 . YourBet eh um jogo de sorte e de certa forma tambem de estrategia , na qual o objetivo &#10;principal eh obter o maximo de pontuação possivel .&#10;&#10;2 . De forma geral as unicas acoes que o jogador pode fazer eh clicar no botao apostar e ajus-&#10;tar as opcoes de chance de ganho e valor da aposta .&#10;&#10;3 . O programa entao ira gerar um numero aleatorio entre 1 e 1000 , o numero resultante eh &#10;quem ira determinar se voce ganhou ou perdeu a aposta .&#10;&#10;3. A chance de ganho funciona da seguinte forma : Voce tem 5 opcoes de escolhas &#10;(10 , 25 , 50 , 75 , 90) , quando um valor aleatorio eh gerado pelo programa , a opcao escolhida&#10;por voce eh quem vai determinar o intervalo que te a vitoria ou a derrota , esse intervalo eh&#10;relativo a esta opcao escolhida , ou seja , caso 10 entao sera de 1 a 100 , caso 25 sera de 1 a &#10;250 , caso 50 de 1 a 500 , caso 75 de 1 a 750 , e finalmente caso 90  entao sera de 1 a 900&#10;&#10;4. Ja o valor da aposta pode variar de 1 a 50 , voce tem a opcao de aumentar ou diminuir no de&#10;correr da partida &#10;&#10;5. Bom , nesse caso qual a vantagem de escolher uma chance ganho baixa ? Eh simples quanto &#10;menor for a chance de ganho escolhida , maior sera a pontuacao caso voce ganhe &#10;" visible="false" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </TextArea>
+      <Button fx:id="btnSairInfo" layoutX="481.0" layoutY="48.0" mnemonicParsing="false" onAction="#habilitaComponentes" prefHeight="25.0" prefWidth="83.0" text="SAIR" visible="false" />
+   </children>
+</AnchorPane>
