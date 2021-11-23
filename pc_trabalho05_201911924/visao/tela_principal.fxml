@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="694.0" style="-fx-background-color: #d7d7d7;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imageMesa" fitHeight="469.0" fitWidth="631.0" layoutX="38.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../mesa.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="filosofo1" fitHeight="139.0" fitWidth="302.0" layoutX="27.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pensando.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="filosofo5" fitHeight="139.0" fitWidth="302.0" layoutX="145.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" rotate="65.0">
+         <image>
+            <Image url="@../../pensando.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="filosofo4" fitHeight="139.0" fitWidth="302.0" layoutX="391.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" rotate="150.0">
+         <image>
+            <Image url="@../../pensando.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="filosofo3" fitHeight="139.0" fitWidth="302.0" layoutX="359.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true" rotate="225.0">
+         <image>
+            <Image url="@../../pensando.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="filosofo2" fitHeight="139.0" fitWidth="302.0" layoutX="152.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" rotate="-60.0">
+         <image>
+            <Image url="@../../pensando.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnIniciar" layoutX="321.0" layoutY="239.0" mnemonicParsing="false" onAction="#iniciaThreads" text="Iniciar" />
+      <ImageView fx:id="sopa1" fitHeight="71.0" fitWidth="52.0" layoutX="216.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../sopa.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sopa4" fitHeight="71.0" fitWidth="52.0" layoutX="427.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../sopa.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sopa5" fitHeight="71.0" fitWidth="52.0" layoutX="289.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../sopa.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sopa3" fitHeight="71.0" fitWidth="52.0" layoutX="401.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../sopa.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sopa2" fitHeight="71.0" fitWidth="52.0" layoutX="283.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../sopa.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="70.0" layoutY="179.0" text="Filosofo 1" />
+      <Label layoutX="164.0" layoutY="47.0" text="Filosofo 5" />
+      <Label layoutX="164.0" layoutY="396.0" text="Filosofo 2" />
+      <Label layoutX="560.0" layoutY="351.0" text="Filosofo 3" />
+      <Label layoutX="522.0" layoutY="105.0" text="Filosofo 4" />
+      <Slider fx:id="comer1" blockIncrement="1.0" layoutX="48.0" layoutY="232.0" majorTickUnit="1.0" max="3.0" min="1.0" prefWidth="61.0" value="1.0" />
+      <Slider fx:id="pensar1" blockIncrement="1.0" layoutX="48.0" layoutY="265.0" majorTickUnit="1.0" max="3.0" min="1.0" prefWidth="61.0" value="1.0" />
+      <Label layoutX="61.0" layoutY="218.0" text="Comer" />
+      <Label layoutX="61.0" layoutY="252.0" text="Pensar" />
+      <Slider fx:id="comer2" blockIncrement="1.0" layoutX="140.0" layoutY="440.0" majorTickUnit="1.0" max="3.0" min="1.0" prefWidth="61.0" value="1.0" />
+      <Slider fx:id="pensar2" blockIncrement="1.0" layoutX="140.0" layoutY="471.0" majorTickUnit="1.0" max="3.0" min="1.0" prefWidth="61.0" value="1.0" />
+      <Label layoutX="153.0" layoutY="423.0" text="Comer" />
+      <Label layoutX="153.0" layoutY="453.0" text="Pensar" />
+      <Slider fx:id="comer3" blockIncrement="1.0" layoutX="560.0" layoutY="398.0" majorTickUnit="1.0" max="3.0" min="1.0" prefWidth="61.0" value="1.0" />
+      <Slider fx:id="pensar3" blockIncrement="1.0" layoutX="560.0" layoutY="433.0" majorTickUnit="1.0" max="3.0" min="1.0" prefWidth="61.0" value="1.0" />
+      <Label layoutX="568.0" layoutY="381.0" text="Comer" />
+      <Label layoutX="568.0" layoutY="415.0" text="Pensar" />
+      <Slider fx:id="comer4" blockIncrement="1.0" layoutX="585.0" layoutY="142.0" majorTickUnit="1.0" max="3.0" min="1.0" prefWidth="61.0" value="1.0" />
+      <Slider fx:id="pensar4" blockIncrement="1.0" layoutX="585.0" layoutY="189.0" majorTickUnit="1.0" max="3.0" min="1.0" prefWidth="61.0" value="1.0" />
+      <Label layoutX="594.0" layoutY="122.0" text="Comer" />
+      <Label layoutX="595.0" layoutY="174.0" text="Pensar" />
+      <Slider fx:id="comer5" blockIncrement="1.0" layoutX="159.0" layoutY="91.0" majorTickUnit="1.0" max="3.0" min="1.0" prefWidth="61.0" value="1.0" />
+      <Slider fx:id="pensar5" blockIncrement="1.0" layoutX="160.0" layoutY="135.0" majorTickUnit="1.0" max="3.0" min="1.0" prefWidth="61.0" value="1.0" />
+      <Label layoutX="172.0" layoutY="74.0" text="Comer" />
+      <Label layoutX="173.0" layoutY="122.0" text="Pensar" />
+   </children>
+</AnchorPane>
